@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MemoryCue - Gerenciador de Tarefas Mensais</title>
+    <title>MemoryCue - Gerenciador de Tarefas</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
@@ -68,7 +68,7 @@
     <section class="hero text-center">
         <div class="container">
             <h1 class="display-4 mb-4">MemoryCue</h1>
-            <p class="lead mb-4">Gerencie suas tarefas mensais com facilidade e nunca mais perca um compromisso importante.</p>
+            <p class="lead mb-4">Gerencie suas tarefas diárias e mensais com facilidade e nunca mais esqueça uma tarefa importante.</p>
             <a href="https://chrome.google.com/webstore" class="btn btn-light btn-lg cta-button">
                 <i class="fab fa-chrome me-2"></i>Instalar no Chrome
             </a>
@@ -83,17 +83,17 @@
                 <div class="card feature-card h-100">
                     <div class="card-body text-center">
                         <i class="fas fa-tasks feature-icon"></i>
-                        <h3 class="card-title">Gerenciamento de Tarefas</h3>
-                        <p class="card-text">Adicione tarefas com título, observações e data específica do mês. Organize suas atividades de forma simples e eficiente.</p>
+                        <h3 class="card-title">Tarefas Diárias e Mensais</h3>
+                        <p class="card-text">Gerencie tanto tarefas diárias quanto mensais. Organize suas atividades de forma flexível e eficiente.</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="card feature-card h-100">
                     <div class="card-body text-center">
-                        <i class="fas fa-bell feature-icon"></i>
-                        <h3 class="card-title">Notificações</h3>
-                        <p class="card-text">Receba lembretes para suas tarefas pendentes e nunca mais perca um compromisso importante.</p>
+                        <i class="fas fa-file-export feature-icon"></i>
+                        <h3 class="card-title">Exportação e Importação</h3>
+                        <p class="card-text">Faça backup das suas tarefas exportando-as e importe-as quando necessário. Mantenha seus dados seguros.</p>
                     </div>
                 </div>
             </div>
@@ -124,16 +124,20 @@
                         Use o botão "+" para adicionar novas tarefas
                     </div>
                     <div class="list-group-item">
+                        <i class="fas fa-calendar me-2"></i>
+                        Escolha entre tarefas diárias ou mensais
+                    </div>
+                    <div class="list-group-item">
                         <i class="fas fa-check-circle me-2"></i>
                         Marque as tarefas como concluídas usando o checkbox
                     </div>
                     <div class="list-group-item">
-                        <i class="fas fa-edit me-2"></i>
-                        Use o botão de lápis para editar tarefas
+                        <i class="fas fa-file-export me-2"></i>
+                        Exporte suas tarefas para backup
                     </div>
                     <div class="list-group-item">
-                        <i class="fas fa-trash me-2"></i>
-                        Use o botão de lixeira para excluir tarefas
+                        <i class="fas fa-file-import me-2"></i>
+                        Importe tarefas de backup quando necessário
                     </div>
                 </div>
             </div>
@@ -143,9 +147,10 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container text-center">
-            <p>MemoryCue - Uma extensão do Chrome para gerenciar suas tarefas mensais</p>
+            <p>MemoryCue - Uma extensão do Chrome para gerenciar suas tarefas</p>
             <p>
-                <a href="PRIVACY.md" class="text-white">Política de Privacidade</a>
+                <a href="PRIVACY.md" class="text-white me-3">Política de Privacidade</a>
+                <a href="releases.html" class="text-white">Notas de Versão</a>
             </p>
         </div>
     </footer>
