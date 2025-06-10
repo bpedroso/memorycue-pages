@@ -1,0 +1,68 @@
+[
+  {
+    "completed": false,
+    "createdAt": "2025-06-05T20:27:17.499Z",
+    "day": null,
+    "id": "1749155237499",
+    "isLate": false,
+    "lastReset": "2025-06-10T03:01:57.543Z",
+    "notes": "",
+    "time": "08:00",
+    "title": "Tomar remédio",
+    "type": "DAILY",
+    "updatedAt": "2025-06-10T13:31:32.783Z",
+    "weekDay": null
+  },
+  {
+    "completed": true,
+    "createdAt": "2025-06-05T20:29:50.889Z",
+    "day": 5,
+    "id": "1749155390889",
+    "isLate": false,
+    "notes": "1. Acessar site da empresa para exportar PDF\n2. Pagar via aplicativo\n3. Adicionar no Drive em Bancos/meubanco",
+    "time": null,
+    "title": "Pagar conta",
+    "type": "MONTHLY",
+    "updatedAt": "2025-06-10T13:33:05.553Z",
+    "weekDay": null
+  },
+  {
+    "completed": false,
+    "createdAt": "2025-06-10T13:33:29.935Z",
+    "day": null,
+    "id": "1749562409935",
+    "isLate": false,
+    "notes": "",
+    "time": null,
+    "title": "Psicólogo",
+    "type": "WEEKLY",
+    "updatedAt": "2025-06-10T13:33:29.935Z",
+    "weekDay": "MONDAY"
+  },
+  {
+    "completed": false,
+    "createdAt": "2025-06-10T13:33:43.346Z",
+    "day": null,
+    "id": "1749562423346",
+    "isLate": false,
+    "notes": "",
+    "time": null,
+    "title": "Happy Hour",
+    "type": "WEEKLY",
+    "updatedAt": "2025-06-10T13:34:21.983Z",
+    "weekDay": "THURSDAY"
+  },
+  {
+    "completed": false,
+    "createdAt": "2025-06-10T13:34:08.000Z",
+    "day": null,
+    "id": "1749562448000",
+    "isLate": false,
+    "notes": "",
+    "time": null,
+    "title": "Aula de violão",
+    "type": "WEEKLY",
+    "updatedAt": "2025-06-10T13:34:08.000Z",
+    "weekDay": "WEDNESDAY"
+  }
+]
