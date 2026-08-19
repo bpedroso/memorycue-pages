@@ -1,68 +1,37 @@
 [
   {
-    "completed": false,
-    "createdAt": "2025-06-05T20:27:17.499Z",
-    "day": null,
-    "id": "1749155237499",
-    "isLate": false,
-    "lastReset": "2025-06-10T03:01:57.543Z",
-    "notes": "",
-    "time": "08:00",
     "title": "Tomar remédio",
+    "notes": "",
     "type": "DAILY",
-    "updatedAt": "2025-06-10T13:31:32.783Z",
-    "weekDay": null
+    "time": "08:00",
+    "tag": ""
   },
   {
-    "completed": true,
-    "createdAt": "2025-06-05T20:29:50.889Z",
-    "day": 5,
-    "id": "1749155390889",
-    "isLate": false,
-    "notes": "1. Acessar site da empresa para exportar PDF\n2. Pagar via aplicativo\n3. Adicionar no Drive em Bancos/meubanco",
-    "time": null,
     "title": "Pagar conta",
+    "notes": "1. Acessar site da empresa para exportar PDF\n2. Pagar via aplicativo\n3. Adicionar no Drive em Bancos/meubanco",
     "type": "MONTHLY",
-    "updatedAt": "2025-06-10T13:33:05.553Z",
-    "weekDay": null
+    "day": 5,
+    "tag": ""
   },
   {
-    "completed": false,
-    "createdAt": "2025-06-10T13:33:29.935Z",
-    "day": null,
-    "id": "1749562409935",
-    "isLate": false,
-    "notes": "",
-    "time": null,
     "title": "Psicólogo",
+    "notes": "",
     "type": "WEEKLY",
-    "updatedAt": "2025-06-10T13:33:29.935Z",
-    "weekDay": "MONDAY"
+    "weekDay": "MONDAY",
+    "tag": ""
   },
   {
-    "completed": false,
-    "createdAt": "2025-06-10T13:33:43.346Z",
-    "day": null,
-    "id": "1749562423346",
-    "isLate": false,
-    "notes": "",
-    "time": null,
     "title": "Happy Hour",
+    "notes": "",
     "type": "WEEKLY",
-    "updatedAt": "2025-06-10T13:34:21.983Z",
-    "weekDay": "THURSDAY"
+    "weekDay": "THURSDAY",
+    "tag": ""
   },
   {
-    "completed": false,
-    "createdAt": "2025-06-10T13:34:08.000Z",
-    "day": null,
-    "id": "1749562448000",
-    "isLate": false,
-    "notes": "",
-    "time": null,
     "title": "Aula de violão",
+    "notes": "",
     "type": "WEEKLY",
-    "updatedAt": "2025-06-10T13:34:08.000Z",
-    "weekDay": "WEDNESDAY"
+    "weekDay": "WEDNESDAY",
+    "tag": ""
   }
 ]
