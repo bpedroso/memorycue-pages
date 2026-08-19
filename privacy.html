@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MemoryCue - Política de Privacidade</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/i18n.css">
+    <style>
+        :root {
+            --primary-color: #4ae2a9;
+            --secondary-color: #2c3e50;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--secondary-color);
+            background: #f7f9fb;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, var(--primary-color), #29b99f);
+            color: white;
+            padding: 50px 0;
+            margin-bottom: 30px;
+        }
+
+        .privacy-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+            padding: 32px;
+            margin-bottom: 40px;
+        }
+
+        .footer {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 30px 0;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body data-i18n-title="privacy.title">
+    <nav class="lang-switcher" aria-label="Language">
+        <button type="button" data-lang="pt" title="Português" aria-label="Português">🇧🇷</button>
+        <button type="button" data-lang="en" title="English" aria-label="English">🇬🇧</button>
+    </nav>
+
+    <section class="hero text-center">
+        <div class="container">
+            <h1 class="display-5 mb-3" data-i18n="privacy.heading">Política de Privacidade - MemoryCue</h1>
+            <p class="lead mb-4" data-i18n="privacy.updated">Última atualização: 20 de Março de 2024</p>
+            <a href="index.html" class="btn btn-light">
+                <i class="fas fa-arrow-left me-2"></i><span data-i18n="privacy.back">Voltar para a página inicial</span>
+            </a>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="privacy-card">
+            <h2 data-i18n="privacy.intro.title">Introdução</h2>
+            <p data-i18n="privacy.intro.body">O MemoryCue é uma extensão do Chrome focada em gerenciamento de tarefas e lembretes. Esta política de privacidade explica como seus dados são armazenados e utilizados.</p>
+
+            <h2 data-i18n="privacy.data.title">Dados Armazenados</h2>
+            <h3 data-i18n="privacy.data.local.title">Dados Locais</h3>
+            <ul>
+                <li data-i18n="privacy.data.local.1">Tarefas que você cria</li>
+                <li data-i18n="privacy.data.local.2">Configurações da extensão</li>
+                <li data-i18n="privacy.data.local.3">Preferências de anúncios</li>
+            </ul>
+            <p data-i18n="privacy.data.local.note">Todos os dados são armazenados localmente no seu navegador usando o Chrome Storage API. Nenhum dado é enviado para servidores externos.</p>
+
+            <h2 data-i18n="privacy.use.title">Como Usamos seus Dados</h2>
+            <h3 data-i18n="privacy.use.features.title">Funcionalidades</h3>
+            <ul>
+                <li data-i18n="privacy.use.features.1">Armazenamento local das suas tarefas</li>
+                <li data-i18n="privacy.use.features.2">Sincronização entre seus dispositivos (opcional)</li>
+                <li data-i18n="privacy.use.features.3">Exibição de anúncios não intrusivos</li>
+            </ul>
+            <h3 data-i18n="privacy.ads.title">Anúncios</h3>
+            <ul>
+                <li data-i18n="privacy.ads.1">Utilizamos o Google AdSense e Acceptable Ads</li>
+                <li data-i18n="privacy.ads.2">Os anúncios seguem diretrizes de não intrusividade</li>
+                <li data-i18n="privacy.ads.3">Você pode desativar os anúncios a qualquer momento</li>
+            </ul>
+
+            <h2 data-i18n="privacy.rights.title">Seus Direitos</h2>
+            <h3 data-i18n="privacy.rights.control.title">Controle de Dados</h3>
+            <ul>
+                <li data-i18n="privacy.rights.1">Exportar suas tarefas</li>
+                <li data-i18n="privacy.rights.2">Excluir suas tarefas</li>
+                <li data-i18n="privacy.rights.3">Desativar anúncios</li>
+                <li data-i18n="privacy.rights.4">Limpar todos os dados</li>
+            </ul>
+
+            <h2 data-i18n="privacy.security.title">Segurança</h2>
+            <ul>
+                <li data-i18n="privacy.security.1">Todos os dados são armazenados localmente no seu navegador</li>
+                <li data-i18n="privacy.security.2">Não compartilhamos dados com terceiros</li>
+                <li data-i18n="privacy.security.3">Você tem controle total sobre seus dados</li>
+            </ul>
+
+            <h2 data-i18n="privacy.contact.title">Contato</h2>
+            <p data-i18n="privacy.contact.body">Para questões sobre privacidade:</p>
+            <p>GitHub: <a href="https://github.com/bpedroso/memorycue">https://github.com/bpedroso/memorycue</a></p>
+
+            <h2 data-i18n="privacy.changes.title">Alterações na Política</h2>
+            <p data-i18n="privacy.changes.body">Reservamo-nos o direito de atualizar esta política. Notificaremos sobre mudanças significativas através da extensão ou do repositório.</p>
+
+            <hr>
+            <p data-i18n="privacy.agree">Ao usar o MemoryCue, você concorda com esta política de privacidade.</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container text-center">
+            <p data-i18n="index.footer.tagline">MemoryCue - Uma extensão para navegadores baseados no Chromium</p>
+            <p>
+                <a href="releases.html" class="text-white" data-i18n="index.footer.releases">Notas de Versão</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/i18n.js"></script>
+</body>
+</html>

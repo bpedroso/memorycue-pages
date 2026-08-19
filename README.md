@@ -1,9 +1,5 @@
-# Memory Cue
-
-## Para acessar no github pages
-
-https://bpedroso.github.io/memorycue-pages/index.html
-
-## Projeto publicado em:
+Documentation site for MemoryCue (Portuguese and English).
 
 https://chromewebstore.google.com/detail/memorycue/dheoladffldoeibjmiielgdhenlaknbb
+
+Use the flags in the top-right corner to switch language: 🇧🇷 Português / 🇬🇧 English.

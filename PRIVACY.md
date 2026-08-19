@@ -52,4 +52,4 @@ Reservamo-nos o direito de atualizar esta política. Notificaremos sobre mudanç
 
 ---
 
-Ao usar o MemoryCue, você concorda com esta política de privacidade. 
+A versão navegável (português e inglês) está em [privacy.html](privacy.html). 

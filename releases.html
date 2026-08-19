@@ -6,6 +6,7 @@
     <title>MemoryCue - Notas de Versão</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/i18n.css">
     <style>
         :root {
             --primary-color: #4a90e2;
@@ -65,120 +66,136 @@
         }
     </style>
 </head>
-<body>
-    <!-- Hero Section -->
+<body data-i18n-title="releases.title">
+    <nav class="lang-switcher" aria-label="Language">
+        <button type="button" data-lang="pt" title="Português" aria-label="Português">🇧🇷</button>
+        <button type="button" data-lang="en" title="English" aria-label="English">🇬🇧</button>
+    </nav>
+
     <section class="hero text-center">
         <div class="container">
-            <h1 class="display-4 mb-4">Notas de Versão</h1>
-            <p class="lead mb-4">Acompanhe as novidades e melhorias do MemoryCue</p>
+            <h1 class="display-4 mb-4" data-i18n="releases.hero.title">Notas de Versão</h1>
+            <p class="lead mb-4" data-i18n="releases.hero.lead">Acompanhe as novidades e melhorias do MemoryCue</p>
             <a href="index.html" class="btn btn-light">
-                <i class="fas fa-arrow-left me-2"></i>Voltar para a página inicial
+                <i class="fas fa-arrow-left me-2"></i><span data-i18n="releases.hero.back">Voltar para a página inicial</span>
             </a>
         </div>
     </section>
 
-    <!-- Versions Section -->
     <section class="container mb-5">
-        <!-- Version 1.4.0 -->
         <div class="card version-card mb-4">
             <div class="version-header">
-                <h2 class="mb-0">Versão 1.4.0</h2>
-                <small>Lançada em: Março 2024</small>
+                <h2 class="mb-0" data-i18n="releases.v141.title">Versão 1.4.1</h2>
+                <small data-i18n="releases.v141.date">Lançada em: Agosto 2026</small>
             </div>
             <div class="card-body">
-                <h3 class="card-title">Novas Funcionalidades</h3>
+                <h3 class="card-title" data-i18n="releases.newFeatures">Novas Funcionalidades</h3>
                 <ul class="feature-list">
-                    <li>Sistema de tags para melhor organização das tarefas</li>
-                    <li>Importação de tarefas a partir de arquivo externo</li>
-                    <li>Biblioteca de templates de tarefas pré-definidas</li>
-                    <li>Interface aprimorada para gerenciamento de tags</li>
-                    <li>Opções mais flexíveis durante a importação de tarefas</li>
+                    <li data-i18n="releases.v141.1">Lembrete único com atraso relativo (minutos ou horas)</li>
+                    <li data-i18n="releases.v141.2">Alerta no vencimento: notificação e sino (som pode ser desligado no popup)</li>
+                    <li data-i18n="releases.v141.3">Status ativada/desativada em todas as tarefas; o popup lista só as ativas</li>
+                    <li data-i18n="releases.v141.4">Concluir uma ocorrência não desativa a tarefa</li>
+                    <li data-i18n="releases.v141.5">No popup: pausar para desativar; exclusão só na página de gestão</li>
+                    <li data-i18n="releases.v141.6">Acesso à gestão pelo botão de três linhas no header do popup</li>
                 </ul>
             </div>
         </div>
 
-        <!-- Version 1.3.0 -->
         <div class="card version-card mb-4">
             <div class="version-header">
-                <h2 class="mb-0">Versão 1.3.0</h2>
-                <small>Lançada em: Março 2024</small>
+                <h2 class="mb-0" data-i18n="releases.v140.title">Versão 1.4.0</h2>
+                <small data-i18n="releases.v140.date">Lançada em: Março 2024</small>
             </div>
             <div class="card-body">
-                <h3 class="card-title">Novas Funcionalidades</h3>
+                <h3 class="card-title" data-i18n="releases.newFeatures">Novas Funcionalidades</h3>
                 <ul class="feature-list">
-                    <li>Modal de confirmação personalizado para melhor experiência do usuário</li>
-                    <li>Opções flexíveis na importação de tarefas (Incrementar ou Substituir)</li>
-                    <li>Melhor organização do código com componentes reutilizáveis</li>
-                    <li>Interface mais moderna e consistente</li>
-                    <li>Feedback visual aprimorado nas ações de confirmação</li>
+                    <li data-i18n="releases.v140.1">Sistema de tags para melhor organização das tarefas</li>
+                    <li data-i18n="releases.v140.2">Importação de tarefas a partir de arquivo externo</li>
+                    <li data-i18n="releases.v140.3">Biblioteca de templates de tarefas pré-definidas</li>
+                    <li data-i18n="releases.v140.4">Interface aprimorada para gerenciamento de tags</li>
+                    <li data-i18n="releases.v140.5">Opções mais flexíveis durante a importação de tarefas</li>
                 </ul>
             </div>
         </div>
 
-        <!-- Version 1.2.0 -->
         <div class="card version-card mb-4">
             <div class="version-header">
-                <h2 class="mb-0">Versão 1.2.0</h2>
-                <small>Lançada em: Março 2024</small>
+                <h2 class="mb-0" data-i18n="releases.v130.title">Versão 1.3.0</h2>
+                <small data-i18n="releases.v130.date">Lançada em: Março 2024</small>
             </div>
             <div class="card-body">
-                <h3 class="card-title">Novas Funcionalidades</h3>
+                <h3 class="card-title" data-i18n="releases.newFeatures">Novas Funcionalidades</h3>
                 <ul class="feature-list">
-                    <li>Suporte a horário para tarefas diárias (opcional, padrão 00:00)</li>
-                    <li>Status da tarefa baseado no horário atual</li>
-                    <li>Ícones distintivos para cada tipo de tarefa (📅 mensal, ⏰ diária)</li>
-                    <li>Melhor organização do formulário de cadastro</li>
-                    <li>Ordenação inteligente das tarefas diárias por horário</li>
+                    <li data-i18n="releases.v130.1">Modal de confirmação personalizado para melhor experiência do usuário</li>
+                    <li data-i18n="releases.v130.2">Opções flexíveis na importação de tarefas (Incrementar ou Substituir)</li>
+                    <li data-i18n="releases.v130.3">Melhor organização do código com componentes reutilizáveis</li>
+                    <li data-i18n="releases.v130.4">Interface mais moderna e consistente</li>
+                    <li data-i18n="releases.v130.5">Feedback visual aprimorado nas ações de confirmação</li>
                 </ul>
             </div>
         </div>
 
-        <!-- Version 1.1.0 -->
         <div class="card version-card mb-4">
             <div class="version-header">
-                <h2 class="mb-0">Versão 1.1.0</h2>
-                <small>Lançada em: Junho 2025</small>
+                <h2 class="mb-0" data-i18n="releases.v120.title">Versão 1.2.0</h2>
+                <small data-i18n="releases.v120.date">Lançada em: Março 2024</small>
             </div>
             <div class="card-body">
-                <h3 class="card-title">Novas Funcionalidades</h3>
+                <h3 class="card-title" data-i18n="releases.newFeatures">Novas Funcionalidades</h3>
                 <ul class="feature-list">
-                    <li>Suporte para tarefas diárias e mensais</li>
-                    <li>Exportação de tarefas para backup</li>
-                    <li>Importação de tarefas de backup</li>
-                    <li>Interface aprimorada para gerenciamento de diferentes tipos de tarefas</li>
+                    <li data-i18n="releases.v120.1">Suporte a horário para tarefas diárias (opcional, padrão 00:00)</li>
+                    <li data-i18n="releases.v120.2">Status da tarefa baseado no horário atual</li>
+                    <li data-i18n="releases.v120.3">Ícones distintivos para cada tipo de tarefa (📅 mensal, ⏰ diária)</li>
+                    <li data-i18n="releases.v120.4">Melhor organização do formulário de cadastro</li>
+                    <li data-i18n="releases.v120.5">Ordenação inteligente das tarefas diárias por horário</li>
                 </ul>
             </div>
         </div>
 
-        <!-- Version 1.0.0 -->
+        <div class="card version-card mb-4">
+            <div class="version-header">
+                <h2 class="mb-0" data-i18n="releases.v110.title">Versão 1.1.0</h2>
+                <small data-i18n="releases.v110.date">Lançada em: Junho 2025</small>
+            </div>
+            <div class="card-body">
+                <h3 class="card-title" data-i18n="releases.newFeatures">Novas Funcionalidades</h3>
+                <ul class="feature-list">
+                    <li data-i18n="releases.v110.1">Suporte para tarefas diárias e mensais</li>
+                    <li data-i18n="releases.v110.2">Exportação de tarefas para backup</li>
+                    <li data-i18n="releases.v110.3">Importação de tarefas de backup</li>
+                    <li data-i18n="releases.v110.4">Interface aprimorada para gerenciamento de diferentes tipos de tarefas</li>
+                </ul>
+            </div>
+        </div>
+
         <div class="card version-card">
             <div class="version-header">
-                <h2 class="mb-0">Versão 1.0.0</h2>
-                <small>Lançada em: Maio 2025</small>
+                <h2 class="mb-0" data-i18n="releases.v100.title">Versão 1.0.0</h2>
+                <small data-i18n="releases.v100.date">Lançada em: Maio 2025</small>
             </div>
             <div class="card-body">
-                <h3 class="card-title">Funcionalidades Iniciais</h3>
+                <h3 class="card-title" data-i18n="releases.initialFeatures">Funcionalidades Iniciais</h3>
                 <ul class="feature-list">
-                    <li>Gerenciamento de tarefas mensais</li>
-                    <li>Adição de tarefas com título e observações</li>
-                    <li>Notificações para tarefas pendentes</li>
-                    <li>Sincronização entre dispositivos</li>
-                    <li>Interface intuitiva e fácil de usar</li>
+                    <li data-i18n="releases.v100.1">Gerenciamento de tarefas mensais</li>
+                    <li data-i18n="releases.v100.2">Adição de tarefas com título e observações</li>
+                    <li data-i18n="releases.v100.3">Notificações para tarefas pendentes</li>
+                    <li data-i18n="releases.v100.4">Sincronização entre dispositivos</li>
+                    <li data-i18n="releases.v100.5">Interface intuitiva e fácil de usar</li>
                 </ul>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container text-center">
-            <p>MemoryCue - Uma extensão do Chrome para gerenciar suas tarefas</p>
+            <p data-i18n="releases.footer.tagline">MemoryCue - Uma extensão do Chrome para gerenciar suas tarefas</p>
             <p>
-                <a href="PRIVACY.md" class="text-white">Política de Privacidade</a>
+                <a href="privacy.html" class="text-white" data-i18n="index.footer.privacy">Política de Privacidade</a>
             </p>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/i18n.js"></script>
 </body>
-</html> 
+</html>

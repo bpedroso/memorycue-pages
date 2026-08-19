@@ -6,6 +6,7 @@
     <title>MemoryCue - Gerenciador de Tarefas</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/i18n.css">
     <style>
         :root {
             --primary-color: #4ae2a9;
@@ -96,17 +97,21 @@
         }
     </style>
 </head>
-<body>
+<body data-i18n-title="index.title">
+    <nav class="lang-switcher" aria-label="Language">
+        <button type="button" data-lang="pt" title="Português" aria-label="Português">🇧🇷</button>
+        <button type="button" data-lang="en" title="English" aria-label="English">🇬🇧</button>
+    </nav>
     <!-- Hero Section -->
     <section class="hero text-center">
         <div class="container">
             <h1 class="display-4 mb-4">MemoryCue</h1>
-            <p class="lead mb-4">Gerencie suas tarefas diárias, semanais e mensais com facilidade e nunca mais esqueça uma tarefa importante.</p>
+            <p class="lead mb-4" data-i18n="index.hero.lead">Gerencie tarefas diárias, semanais, mensais e lembretes pontuais — e receba um alerta quando chegar a hora.</p>
             
             <div class="mb-4">
                 <a href="https://chromewebstore.google.com/detail/memorycue/dheoladffldoeibjmiielgdhenlaknbb" class="btn btn-light btn-lg cta-button">
                     <i class="fab fa-chrome browser-icon"></i>
-                    Instalar da Chrome Web Store
+                    <span data-i18n="index.hero.cta">Instalar da Chrome Web Store</span>
                 </a>
             </div>
         </div>
@@ -114,14 +119,23 @@
 
     <!-- Features Section -->
     <section class="container mb-5">
-        <h2 class="text-center mb-5">Funcionalidades Principais</h2>
+        <h2 class="text-center mb-5" data-i18n="index.features.title">Funcionalidades Principais</h2>
         <div class="row">
             <div class="col-md-4">
                 <div class="card feature-card h-100">
                     <div class="card-body text-center">
                         <i class="fas fa-tasks feature-icon"></i>
-                        <h3 class="card-title">Gerenciamento Inteligente</h3>
-                        <p class="card-text">Organize suas tarefas com tags personalizadas, defina recorrências (Diárias, Semanais, Mensais) e mantenha tudo sob controle com uma interface intuitiva.</p>
+                        <h3 class="card-title" data-i18n="index.features.manage.title">Gerenciamento Inteligente</h3>
+                        <p class="card-text" data-i18n="index.features.manage.body">Organize com tags, defina recorrências (diária, semanal, mensal) ou um lembrete único para daqui a pouco. Ative e desative tarefas; o popup mostra só as ativas.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card feature-card h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-bell feature-icon"></i>
+                        <h3 class="card-title" data-i18n="index.features.alerts.title">Alertas no vencimento</h3>
+                        <p class="card-text" data-i18n="index.features.alerts.body">Quando a tarefa chega no horário ou no dia, o MemoryCue mostra uma notificação e pode tocar um sino. Você silencia o som no popup se preferir.</p>
                     </div>
                 </div>
             </div>
@@ -129,8 +143,8 @@
                 <div class="card feature-card h-100">
                     <div class="card-body text-center">
                         <i class="fas fa-file-import feature-icon"></i>
-                        <h3 class="card-title">Templates e Importação</h3>
-                        <p class="card-text">Comece rapidamente com nossa <a href="https://github.com/bpedroso/memorycue-pages/tree/main/tasks" class="text-primary">biblioteca de templates</a> pré-definidos ou importe suas próprias tarefas. Opções flexíveis de importação para atender suas necessidades.</p>
+                        <h3 class="card-title" data-i18n="index.features.templates.title">Templates e Importação</h3>
+                        <p class="card-text" data-i18n="index.features.templates.body" data-i18n-html="true">Comece rapidamente com nossa <a href="https://github.com/bpedroso/memorycue-pages/tree/main/tasks" class="text-primary">biblioteca de templates</a> pré-definidos ou importe suas próprias tarefas. Opções flexíveis de importação para atender suas necessidades.</p>
                     </div>
                 </div>
             </div>
@@ -138,8 +152,8 @@
                 <div class="card feature-card h-100">
                     <div class="card-body text-center">
                         <i class="fas fa-sync feature-icon"></i>
-                        <h3 class="card-title">Sincronização e Backup</h3>
-                        <p class="card-text">Suas tarefas e tags são sincronizadas automaticamente entre dispositivos. Faça backup e restaure seus dados com facilidade.</p>
+                        <h3 class="card-title" data-i18n="index.features.sync.title">Sincronização e Backup</h3>
+                        <p class="card-text" data-i18n="index.features.sync.body">Suas tarefas e tags são sincronizadas automaticamente entre dispositivos. Faça backup e restaure seus dados com facilidade.</p>
                     </div>
                 </div>
             </div>
@@ -148,37 +162,43 @@
 
     <!-- How to Use Section -->
     <section class="container mb-5">
-        <h2 class="text-center mb-5">Como Usar</h2>
+        <h2 class="text-center mb-5" data-i18n="index.howto.title">Como Usar</h2>
         <div class="row">
             <div class="col-md-6 offset-md-3">
                 <div class="list-group">
                     <div class="list-group-item">
                         <i class="fas fa-plus-circle me-2"></i>
-                        Clique no ícone da extensão <img src="assets/icons/icon16.png" alt="MemoryCue icon" style="vertical-align: middle; margin: 0 2px;"> na barra de ferramentas
+                        <span data-i18n="index.howto.1a">Clique no ícone da extensão</span>
+                        <img src="assets/icons/icon16.png" alt="MemoryCue icon" style="vertical-align: middle; margin: 0 2px;">
+                        <span data-i18n="index.howto.1b">na barra de ferramentas</span>
                     </div>
                     <div class="list-group-item">
-                        <i class="fas fa-plus-circle me-2"></i>
-                        Use o botão "+" para adicionar novas tarefas
+                        <i class="fas fa-bars me-2"></i>
+                        <span data-i18n="index.howto.2">No popup, use o botão de três linhas para abrir a página de gestão</span>
                     </div>
                     <div class="list-group-item">
                         <i class="fas fa-calendar me-2"></i>
-                        Escolha entre tarefa diária, semanal ou mensal
+                        <span data-i18n="index.howto.3">Crie tarefa diária, semanal, mensal ou um lembrete único (daqui a X minutos ou horas)</span>
                     </div>
                     <div class="list-group-item">
                         <i class="fas fa-check-circle me-2"></i>
-                        Marque as tarefas como concluídas usando o checkbox
+                        <span data-i18n="index.howto.4">Marque as tarefas como concluídas usando o checkbox; concluir não desativa a tarefa</span>
+                    </div>
+                    <div class="list-group-item">
+                        <i class="fas fa-pause me-2"></i>
+                        <span data-i18n="index.howto.5">Desative pelo popup (ícone de pausa) para tirá-la da lista sem apagar</span>
                     </div>
                     <div class="list-group-item">
                         <i class="fas fa-file-export me-2"></i>
-                        Exporte ou importe suas tarefas para backup
+                        <span data-i18n="index.howto.6">Exporte ou importe suas tarefas para backup na página de gestão</span>
                     </div>
                     <div class="list-group-item">
                         <i class="fas fa-pencil me-2"></i>
-                        Edite suas tarefas quando necessário
+                        <span data-i18n="index.howto.7">Edite ou exclua tarefas na página de gestão</span>
                     </div>
                     <div class="list-group-item">
                         <i class="fas fa-list me-2"></i>
-                        Organize as tarefas por etiquetas
+                        <span data-i18n="index.howto.8">Organize as tarefas por etiquetas</span>
                     </div>
                 </div>
             </div>
@@ -188,15 +208,16 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container text-center">
-            <p>MemoryCue - Uma extensão para navegadores baseados no Chromium</p>
+            <p data-i18n="index.footer.tagline">MemoryCue - Uma extensão para navegadores baseados no Chromium</p>
             <p>
-                <a href="PRIVACY.md" class="text-white me-3">Política de Privacidade</a>
-                <a href="releases.html" class="text-white">Notas de Versão</a>
+                <a href="privacy.html" class="text-white me-3" data-i18n="index.footer.privacy">Política de Privacidade</a>
+                <a href="releases.html" class="text-white" data-i18n="index.footer.releases">Notas de Versão</a>
             </p>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/i18n.js"></script>
 </body>
 </html>
 
