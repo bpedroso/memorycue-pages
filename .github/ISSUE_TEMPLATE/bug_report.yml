@@ -1,0 +1,31 @@
+name: 🐛 Relato de Bug
+description: Crie um relatório para nos ajudar a corrigir um problema
+title: "[BUG]: "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: Obrigado por relatar o problema! Por favor, preencha os detalhes abaixo.
+  - type: textarea
+    id: description
+    attributes:
+      label: Descrição do Bug
+      description: O que aconteceu de errado?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Passos para reproduzir
+      description: Descreva o passo a passo para o bug ocorrer.
+      placeholder: |
+        1. Acesse a tela X
+        2. Clique no botão Y
+        3. Veja o erro acontecer
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Ambiente / Navegador
+      placeholder: Ex: Chrome 124 no macOS / Extensão v1.0.2

@@ -1,0 +1,17 @@
+name: 💡 Sugestão de Feature
+description: Sugira uma nova funcionalidade ou melhoria
+title: "[FEATURE]: "
+labels: ["enhancement", "triage"]
+body:
+  - type: textarea
+    id: feature-description
+    attributes:
+      label: O que você gostaria de ver?
+      description: Descreva de forma clara a funcionalidade desejada.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Contexto ou Caso de Uso
+      description: Por que essa melhoria seria útil? Qual problema ela resolve?
